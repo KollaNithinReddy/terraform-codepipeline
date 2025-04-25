@@ -1,4 +1,5 @@
 resource "aws_instance" "web" {
   ami           = "ami-0f1dcc636b69a6438"
   instance_type = "t2.micro"
+  name = "terrafrom-pipeline-poc"
 }
