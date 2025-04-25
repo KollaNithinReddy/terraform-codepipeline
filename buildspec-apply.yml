@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+      - echo "Installing Terraform..."
+  build:
+    commands:
+      - terraform init
+      - terraform apply -auto-approve

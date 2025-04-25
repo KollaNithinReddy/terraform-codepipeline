@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+      - echo "Installing Terraform..."
+  build:
+    commands:
+      - terraform init
+      - terraform validate
+      - terraform plan -out=tfplan
+      - terraform show -no-color tfplan > plan.txt
+artifacts:
+  files:
+    - plan.txt
