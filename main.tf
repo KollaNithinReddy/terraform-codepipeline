@@ -6,11 +6,3 @@ resource "aws_instance" "web" {
   }
   
 }
-resource "aws_instance" "instance" {
-  ami           = "ami-0f1dcc636b69a6438"
-  instance_type = "t2.micro"
-  tags = {
-    name = "pipeline-instance"
-  }
-  
-}
