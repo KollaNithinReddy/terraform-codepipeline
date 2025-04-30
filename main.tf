@@ -6,11 +6,4 @@ resource "aws_instance" "web" {
   }
   
 }
-resource "aws_instance" "web" {
-  ami           = "ami-0f1dcc636b69a6438"
-  instance_type = "t2.micro"
-  tags = {
-    name = "terrafrom-instance"
-  }
-  
-}
+
