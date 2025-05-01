@@ -17,6 +17,4 @@ phases:
       - terraform validate
       - terraform plan -out=tfplan 
 
-artifacts:
-  files:
-    - plan.txt
+
