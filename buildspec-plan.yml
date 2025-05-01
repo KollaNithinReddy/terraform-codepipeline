@@ -15,9 +15,7 @@ phases:
       - echo "Running Terraform Plan..."
       - terraform init
       - terraform validate
-      - terraform plan -out=tfplan
-      - terraform show -no-color tfplan > plan.txt
-      - cat plan.txt  # Optional: show plan in CodeBuild logs
+      - terraform plan -out=tfplan 
 
 artifacts:
   files:
